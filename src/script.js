@@ -22,11 +22,11 @@ function addTransaction(type) {
   const li = document.createElement("li");
 
   if (type === "income") {
-    li.textContent = `${description} - ${amount} kr (Inkomst)`;
+    li.textContent = description + " - " + amount + " kr (Inkomst)";
     incomeList.appendChild(li);
     balance += amount;
   } else {
-    li.textContent = `${description} - ${amount} kr (Utgift)`;
+    li.textContent = description + " - " + amount + " kr (Utgift)";
     expenseList.appendChild(li);
     balance -= amount;
   }
